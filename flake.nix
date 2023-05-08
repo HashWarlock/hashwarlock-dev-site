@@ -18,7 +18,7 @@
       };
       packages = {
         x86_64-linux = {
-          wrlx = import ./packages/wrlx.nix flakeContext;
+          nixos = import ./packages/nixos.nix flakeContext;
         };
       };
     };
