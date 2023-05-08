@@ -1,11 +1,11 @@
 {
   description = "Welcome to hashwarlock's dev website";
   inputs = {
-    nixpkgs.url = "flake:nixpkgs/nixpkgs-unstable";
-    nixos-generators.url = "flake:nixos-generators";
+    nixpkgs.url = "github:nixos/nixpkgs/release-22.11";
+    nixos-generators.url = "github:nix-community/nixos-generators";
     nixos-generators.inputs.nixpkgs.follows = "nixpkgs";
   };
-  outputs = inputs:
+  outputs = { self, nixpkgs, nixos-generators, ... }@inputs:
     let
       flakeContext = {
         inherit inputs;

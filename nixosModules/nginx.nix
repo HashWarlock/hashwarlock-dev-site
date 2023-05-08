@@ -9,6 +9,7 @@
         };
       };
     };
+    systemd.services.nginx.serviceConfig.ProtectHome = "read-only";
     services = {
       nginx = {
         enable = true;

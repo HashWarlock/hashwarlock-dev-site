@@ -16,9 +16,7 @@
     services = {
       openssh = {
         enable = true;
-        settings = {
-          PasswordAuthentication = false;
-        };
+        passwordAuthentication = false;
       };
     };
     users = {
