@@ -20,12 +20,7 @@
           default = true;
           enableACME = true;
           forceSSL = true;
-          locations."/" = {
-            recommendedProxySettings = true;
-            proxyPass = "http://127.0.0.1:3000/";
-            root = "/var/www/hashwarlock.dev";
-          };
-
+          root = "/var/www/hashwarlock.dev";
           serverName = "hashwarlock.dev";
         };
       };
