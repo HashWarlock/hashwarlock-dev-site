@@ -29,7 +29,7 @@
               ];
             };
           };
-          password = "root";
+          hashedPassword = "$6$mRozIP8tgDqhvyGs$HY7tFM7T/0oaTcdt8abTdvFlPaI07ooFu7y1o7ZFpjHhHSCZNEKUj57Sv7wdYMGCjyilNGXZeMoLWYDp9Jhcg/";
         };
       };
     };

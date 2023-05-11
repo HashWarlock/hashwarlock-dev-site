@@ -14,19 +14,19 @@
       nginx = {
         enable = true;
         recommendedTlsSettings = true;
-        virtualHosts = {
-          wrlx = {
-            default = true;
-            enableACME = true;
-            forceSSL = true;
-            root = (
-              builtins.fetchTarball {
-                url = "https://storage.mynixos.com/401/resources/635cf7cf-7eda-492e-89ae-a06d4dfb5bdd/site.tar.gz";
-                sha256 = "+NErJxvUWRknhf82HDT/lso+jee99hM6KfgVtGL6VXY=";
-              }
-            );
-            serverName = "hashwarlock.dev";
+        recommendedOptimisation = true;
+        recommendedGzipSettings = true;
+        virtualHosts."hashwarlock.dev" = {
+          default = true;
+          enableACME = true;
+          forceSSL = true;
+          locations."/" = {
+            recommendedProxySettings = true;
+            proxyPass = "http://127.0.0.1:3000/";
+            root = "/var/www/hashwarlock.dev";
           };
+
+          serverName = "hashwarlock.dev";
         };
       };
     };
