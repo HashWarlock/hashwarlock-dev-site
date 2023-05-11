@@ -25,7 +25,7 @@
           openssh = {
             authorizedKeys = {
               keys = [
-                "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJ1kROv/ERg+Eun+eaOb4umjDmp7ORQREQFqF5r7QEQG hashwarlock@protonmail.com"
+                "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIP9OYAfrslqWkVOU/0N+oH7YYANWRLF/nz92d/gX1ZPW hashwarlock@protonmail.com"
               ];
             };
           };
